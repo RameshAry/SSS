@@ -81,8 +81,6 @@ p {
 /* footer */
 
 footer {
-  margin-top: 45px;
-  padding-top: 5px;
   border-top: 1px solid $gray-medium-light;
   color: $gray-light;
   a {
@@ -92,12 +90,15 @@ footer {
     }
   }
   small {
+    bottom: 0;
     float: left;
   }
   ul {
+    bottom: 0;
     float: right;
     list-style: none;
     li {
+      bottom: 0;
       float: left;
       margin-left: 15px;
     }
@@ -191,5 +192,18 @@ input {
   width: auto;
   margin-left: 0;
 }
+
+/* Users index */
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
+}
+
 
 
