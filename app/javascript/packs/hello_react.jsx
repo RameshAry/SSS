@@ -2,10 +2,3 @@
 // like app/views/layouts/application.html.erb. All it does is render <div>Hello React</div> at the bottom
 // of the page.
 
-import { default as Stickies } from './components/Stickies';
-
- export {
-   Stickies
- };
-
- export default Stickies;
