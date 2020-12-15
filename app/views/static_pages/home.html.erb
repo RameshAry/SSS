@@ -1,20 +1,158 @@
 <% if logged_in? %>
-  <div class="row">
-    <aside class="col-md-4">
-      <section class="user_info">
-        <%= render 'shared/user_info' %>
-      </section>
-      <section class="micropost_form">
-        <%= render 'shared/micropost_form' %>
-      </section>
-    </aside>
-    <div class="col-md-8">
-      <h3>Micropost Feed</h3>
-      <%= render 'shared/feed' %>
+
+
+
+    <div class="btn-group">
+      <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        New
+      </button>
+      <div class="dropdown-menu">
+          <li>
+        <a class="dropdown-item" href="#">New Model</a>
+        <a class="dropdown-item" href="#">Existing Model</a>
+        <a class="dropdown-item" href="#">Upload File</a>
+        <a class="dropdown-item" href="#">Hypothesis</a>
+        <a class="dropdown-item" href="#">Experiment</a>
+
+        <div class="dropdown-divider"></div>
+        <div class="divider"></div>
+        <a class="dropdown-item" href="#">Download the file</a>
+        </li>
+      </div>
     </div>
-    <div style='margin-top: 15px'>
-    <%= render 'shared/project'%>
+
+
+
+
+    <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3">Reward Pitch</h1>
+          <input type="text" id="fname" name="firstname" placeholder="Your Company Name..">
+          <p></p>
+          <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
+        </div>
+      </div>
+
+      <a href="/images/myw3schoolsimage.jpg" download>
+
+      <form action="/action_page.php">
+      <label for="img">Select image:</label>
+      <input type="file" id="img" name="img" accept="image/*">
+      <input type="submit">
+    </form>
+
+
+
+    <head>
+    <meta charset="utf-8">
+    <title>JavaScript form validation - checking non-empty</title>
+    <link rel='stylesheet' href='form-style.css' type='text/css' />
+    </head>
+    <body>
+    <div class="mail">
+    <h2>Company Name</h2>
+    <form name="form1" action="#" onsubmit="required()">
+    <ul>
+    <li><input type='text' name ='text1'/></li>
+    <li><input type="submit" name="submit" value="Submit" /></li>
+    </ul>
+    </form>
     </div>
+    <script src="non-empty.js"></script>
+    </body>
+
+
+    <hr style="width:100%; display: block; margin-left: auto;
+                                                     margin-right: auto;">
+    <hr style="width:100%; display: block; margin-left: auto;
+                                                     margin-right: auto;">
+
+
+    <div class="row mb-2">
+            <div class="col-md-8">
+              <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                <div class="card-body d-flex flex-column align-items-start">
+                  <h3 class="mb-0">
+                    <a class="text-dark" href="#">COMPANY OVERVIEW</a>
+
+                  </h3>
+
+                  <%= render 'shared/overview'%>
+
+
+
+
+
+
+
+            <hr style="width:100%; display: block; margin-left: auto;
+                                                     margin-right: auto;">
+
+            <hr style="width:100%; display: block; margin-left: auto;
+                                                             margin-right: auto;">
+
+    <div class="row">
+                <div class="col-md-8">
+                  <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                    <div class="card-body d-flex flex-column align-items-start">
+                      <h3 class="mb-0">
+                        <a class="text-dark" href="#">Our Strategy</a>
+
+                      </h3>
+
+                      <%= render 'shared/micropost'%>
+
+                    <hr style="width:100%; display: block; margin-left: auto;
+                                                                     margin-right: auto;">
+                    <hr style="width:100%; display: block; margin-left: auto;
+                                                                     margin-right: auto;">
+
+        <h1>Our Market</h1>
+
+   <%= render 'shared/micropost'%>
+
+
+     <hr style="width:100%; display: block; margin-left: auto;
+                                                     margin-right: auto;">
+     <hr style="width:100%; display: block; margin-left: auto;
+                                                      margin-right: auto;">
+    <div style="float:right; margin-top:5px;">
+           <h1>Progress to Date</h1>
+
+
+           <%= render 'shared/micropost'%>
+
+
+           <hr style="width:100%; display: block; margin-left: auto;
+                                                            margin-right: auto;">
+
+
+
+        <h1 style="margin-top: 50px; ">Next Milestone</h1>
+
+        <%= render 'shared/micropost'%>
+
+        <hr style="width:100%; display: block; margin-left: auto;
+                                                     margin-right: auto;">
+    <hr style="width:100%; display: block; margin-left: auto;
+                                                     margin-right: auto;">
+
+                          <h1 style="style:50px;">Key Items</h1>
+
+                      <%= render 'shared/micropost'%>
+
+    <hr style="width:100%; display: block; margin-left: auto;
+                                                     margin-right: auto;">
+    <hr style="width:100%; display: block; margin-left: auto;
+                                                     margin-right: auto;">
+    <h1>Advisors</h1>
+
+    <%= render 'shared/micropost'%>
+
+
+
+
+   ##The data will start to read by the computer
   </div>
 <% else %>
 
