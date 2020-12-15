@@ -1,5 +1,10 @@
 class User < ApplicationRecord
   has_many :microposts, dependent: :destroy
+  has_many :advisors, dependent: :destroy
+  has_many :keyitems, dependent: :destroy
+  has_many :markets, dependent: :destroy
+  has_many :progresses, dependent: :destroy
+  has_many :strategies, dependent: :destroy
   attr_accessor :remember_token
   before_save { self.email = email.downcase }
   validates :name,  presence: true, length: { maximum: 50 }
@@ -41,7 +46,29 @@ class User < ApplicationRecord
   
   # Defines a proto-feed.
   # See "Following users" for the full implementation.
-  def feed
+  def overview_feed
     Micropost.where("user_id = ?", id)
   end
+
+  def advisor_feed
+      Micropost.where("user_id = ?", id)
+  end
+
+  def keyitems_feed
+      Micropost.where("user_id = ?", id)
+  end
+
+
+
+  def progresses_feed
+      Micropost.where("user_id = ?", id)
+  end
+
+  def strategies_feed
+      Micropost.where("user_id = ?", id)
+  end
+
+
+
+
 end

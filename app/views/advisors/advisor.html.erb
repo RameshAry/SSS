@@ -1,0 +1,12 @@
+<li id="advisor-<%= micropost.id %>">
+  <span class="content">
+    <%= advisor.content %>
+    <%= image_tag advisor.display_image if advisor.image.attached? %>
+  </span>
+
+    <% if current_user?(advisor.user) %>
+      <%= link_to "delete", advisor, method: :delete,
+                                       data: { confirm: "You sure?" } %>
+    <% end %>
+  </span>
+</li>

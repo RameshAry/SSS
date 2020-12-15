@@ -1,0 +1,12 @@
+<li id="market-<%= market.id %>">
+  <span class="content">
+    <%= market.content %>
+    <%= image_tag market.display_image if market.image.attached? %>
+  </span>
+
+    <% if current_user?(market.user) %>
+      <%= link_to "delete", market, method: :delete,
+                                       data: { confirm: "You sure?" } %>
+    <% end %>
+  </span>
+</li>

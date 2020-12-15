@@ -1,0 +1,7 @@
+<% if @advisor_items.any? %>
+  <ol class="advisors">
+    <%= render @advisor_items %>
+  </ol>
+  <%= will_paginate @advisor_items,
+                    params: { controller: :static_pages, action: :home } %>
+<% end %>

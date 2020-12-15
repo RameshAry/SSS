@@ -1,0 +1,12 @@
+<li id="progress-<%= progress.id %>">
+  <span class="content">
+    <%= progress.content %>
+    <%= image_tag progress.display_image if progress.image.attached? %>
+  </span>
+
+    <% if current_user?(progress.user) %>
+      <%= link_to "delete", progress, method: :delete,
+                                       data: { confirm: "You sure?" } %>
+    <% end %>
+  </span>
+</li>

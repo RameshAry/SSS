@@ -1,0 +1,12 @@
+<li id="keyitem-<%= keyitem.id %>">
+  <span class="content">
+    <%= keyitem.content %>
+    <%= image_tag keyitem.display_image if keyitem.image.attached? %>
+  </span>
+
+    <% if current_user?(keyitem.user) %>
+      <%= link_to "delete", keyitem, method: :delete,
+                                       data: { confirm: "You sure?" } %>
+    <% end %>
+  </span>
+</li>

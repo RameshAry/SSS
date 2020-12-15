@@ -282,4 +282,387 @@ font-size: 10pt;
 }
 
 
-/* Table */
+/* advisors */
+
+.advisors {
+  list-style: none;
+  padding: 0;
+  li {
+    padding: 10px 0;
+    border-top: 1px solid #e8e8e8;
+  }
+  .user {
+    margin-top: 5em;
+    padding-top: 0;
+  }
+  .content {
+    display: block;
+    margin-left: 60px;
+    img {
+      display: block;
+      padding: 5px 0;
+    }
+  }
+  .timestamp {
+    color: $gray-light;
+    display: block;
+    margin-left: 60px;
+  }
+  .gravatar {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+}
+
+aside {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+}
+
+span.image {
+  margin-top: 10px;
+  input {
+    border: 0;
+  }
+}
+
+li {list-style-type: none;
+font-size: 16pt;
+}
+.mail {
+margin: auto;
+padding-top: 10px;
+padding-bottom: 10px;
+width: 400px;
+background : #D8F1F8;
+border: 1px soild silver;
+color: #000
+}
+.mail h2 {
+margin-left: 38px;
+}
+input {
+font-size: 20pt;
+}
+input:focus, textarea:focus{
+background-color: lightyellow;
+}
+input submit {
+font-size: 12pt;
+}
+.rq {
+color: #FF0000;
+font-size: 10pt;
+}
+
+/* keyitems */
+
+.keyitems {
+  list-style: none;
+  padding: 0;
+  li {
+    padding: 10px 0;
+    border-top: 1px solid #e8e8e8;
+  }
+  .user {
+    margin-top: 5em;
+    padding-top: 0;
+  }
+  .content {
+    display: block;
+    margin-left: 60px;
+    img {
+      display: block;
+      padding: 5px 0;
+    }
+  }
+  .timestamp {
+    color: $gray-light;
+    display: block;
+    margin-left: 60px;
+  }
+  .gravatar {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+}
+
+aside {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+}
+
+span.image {
+  margin-top: 10px;
+  input {
+    border: 0;
+  }
+}
+
+li {list-style-type: none;
+font-size: 16pt;
+}
+.mail {
+margin: auto;
+padding-top: 10px;
+padding-bottom: 10px;
+width: 400px;
+background : #D8F1F8;
+border: 1px soild silver;
+color: #000
+}
+.mail h2 {
+margin-left: 38px;
+}
+input {
+font-size: 20pt;
+}
+input:focus, textarea:focus{
+background-color: lightyellow;
+}
+input submit {
+font-size: 12pt;
+}
+.rq {
+color: #FF0000;
+font-size: 10pt;
+}
+
+/* markets */
+
+.markets {
+  list-style: none;
+  padding: 0;
+  li {
+    padding: 10px 0;
+    border-top: 1px solid #e8e8e8;
+  }
+  .user {
+    margin-top: 5em;
+    padding-top: 0;
+  }
+  .content {
+    display: block;
+    margin-left: 60px;
+    img {
+      display: block;
+      padding: 5px 0;
+    }
+  }
+  .timestamp {
+    color: $gray-light;
+    display: block;
+    margin-left: 60px;
+  }
+  .gravatar {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+}
+
+aside {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+}
+
+span.image {
+  margin-top: 10px;
+  input {
+    border: 0;
+  }
+}
+
+li {list-style-type: none;
+font-size: 16pt;
+}
+.mail {
+margin: auto;
+padding-top: 10px;
+padding-bottom: 10px;
+width: 400px;
+background : #D8F1F8;
+border: 1px soild silver;
+color: #000
+}
+.mail h2 {
+margin-left: 38px;
+}
+input {
+font-size: 20pt;
+}
+input:focus, textarea:focus{
+background-color: lightyellow;
+}
+input submit {
+font-size: 12pt;
+}
+.rq {
+color: #FF0000;
+font-size: 10pt;
+}
+
+/* progresses */
+
+.progresses {
+  list-style: none;
+  padding: 0;
+  li {
+    padding: 10px 0;
+    border-top: 1px solid #e8e8e8;
+  }
+  .user {
+    margin-top: 5em;
+    padding-top: 0;
+  }
+  .content {
+    display: block;
+    margin-left: 60px;
+    img {
+      display: block;
+      padding: 5px 0;
+    }
+  }
+  .timestamp {
+    color: $gray-light;
+    display: block;
+    margin-left: 60px;
+  }
+  .gravatar {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+}
+
+aside {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+}
+
+span.image {
+  margin-top: 10px;
+  input {
+    border: 0;
+  }
+}
+
+li {list-style-type: none;
+font-size: 16pt;
+}
+.mail {
+margin: auto;
+padding-top: 10px;
+padding-bottom: 10px;
+width: 400px;
+background : #D8F1F8;
+border: 1px soild silver;
+color: #000
+}
+.mail h2 {
+margin-left: 38px;
+}
+input {
+font-size: 20pt;
+}
+input:focus, textarea:focus{
+background-color: lightyellow;
+}
+input submit {
+font-size: 12pt;
+}
+.rq {
+color: #FF0000;
+font-size: 10pt;
+}
+
+/* strategies */
+
+.strategies {
+  list-style: none;
+  padding: 0;
+  li {
+    padding: 10px 0;
+    border-top: 1px solid #e8e8e8;
+  }
+  .user {
+    margin-top: 5em;
+    padding-top: 0;
+  }
+  .content {
+    display: block;
+    margin-left: 60px;
+    img {
+      display: block;
+      padding: 5px 0;
+    }
+  }
+  .timestamp {
+    color: $gray-light;
+    display: block;
+    margin-left: 60px;
+  }
+  .gravatar {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+}
+
+aside {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+}
+
+span.image {
+  margin-top: 10px;
+  input {
+    border: 0;
+  }
+}
+
+li {list-style-type: none;
+font-size: 16pt;
+}
+.mail {
+margin: auto;
+padding-top: 10px;
+padding-bottom: 10px;
+width: 400px;
+background : #D8F1F8;
+border: 1px soild silver;
+color: #000
+}
+.mail h2 {
+margin-left: 38px;
+}
+input {
+font-size: 20pt;
+}
+input:focus, textarea:focus{
+background-color: lightyellow;
+}
+input submit {
+font-size: 12pt;
+}
+.rq {
+color: #FF0000;
+font-size: 10pt;
+}
+
+
+
+
+
