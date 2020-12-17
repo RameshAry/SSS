@@ -1,0 +1,12 @@
+<li id="strategy-<%= strategy.id %>">
+  <span class="content">
+    <%= strategy.content %>
+    <%= image_tag strategy.display_image if strategy.image.attached? %>
+  </span>
+
+    <% if current_user?(strategy.user) %>
+      <%= link_to "delete", strategy, method: :delete,
+                                       data: { confirm: "You sure?" } %>
+    <% end %>
+  </span>
+</li>

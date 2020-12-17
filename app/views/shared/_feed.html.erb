@@ -1,7 +1,0 @@
-<% if @overview_items.any? %>
-  <ol class="microposts">
-    <%= render @overview_items %>
-  </ol>
-  <%= will_paginate @overview_items,
-                    params: { controller: :static_pages, action: :home } %>
-<% end %>

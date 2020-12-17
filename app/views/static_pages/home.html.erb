@@ -73,22 +73,20 @@
               <div class="card flex-md-row mb-4 box-shadow h-md-250">
                 <div class="card-body d-flex flex-column align-items-start">
                   <h3 class="mb-0">
-                    <a class="text-dark" href="#">COMPANY OVERVIEW</a>
+                    <a>COMPANY OVERVIEW</a>
 
                   </h3>
 
-                  <%= render 'shared/overview'%>
 
 
 
 
 
 
-
-            <hr style="width:100%; display: block; margin-left: auto;
+<hr style="width:100%; display: block; margin-left: auto;
                                                      margin-right: auto;">
 
-            <hr style="width:100%; display: block; margin-left: auto;
+<hr style="width:100%; display: block; margin-left: auto;
                                                              margin-right: auto;">
 
     <div class="row">
@@ -96,11 +94,25 @@
                   <div class="card flex-md-row mb-4 box-shadow h-md-250">
                     <div class="card-body d-flex flex-column align-items-start">
                       <h3 class="mb-0">
-                        <a class="text-dark" href="#">Our Strategy</a>
+                        <a class="text-dark" href="#">Our Strategy</a></h3>
 
-                      </h3>
+                        <div class="row">
+                            <aside class="col-md-4">
+                              <section class="user_info">
+                                <%= render 'shared/user_info' %>
+                              </section>
+                              <section class="strategy_form">
+                                <%= render 'shared/strategy_form' %>
+                              </section>
+                            </aside>
+                            <div class="col-md-8">
+                                  <h3>Strategies of Company </h3>
+                                  <%= render 'shared/strategy_feed' %>
+                                </div>
+                          </div>
 
-                      <%= render 'shared/strategy'%>
+
+
 
                     <hr style="width:100%; display: block; margin-left: auto;
                                                                      margin-right: auto;">
@@ -109,7 +121,7 @@
 
         <h1>Our Market</h1>
 
-   <%= render 'shared/market'%>
+
 
 
      <hr style="width:100%; display: block; margin-left: auto;
@@ -120,7 +132,7 @@
            <h1>Progress to Date</h1>
 
 
-           <%= render 'shared/progress'%>
+
 
 
            <hr style="width:100%; display: block; margin-left: auto;
@@ -130,7 +142,7 @@
 
         <h1 style="margin-top: 50px; ">Next Milestone</h1>
 
-        <%= render 'shared/micropost'%>
+
 
         <hr style="width:100%; display: block; margin-left: auto;
                                                      margin-right: auto;">
@@ -139,21 +151,12 @@
 
                           <h1 style="style:50px;">Key Items</h1>
 
-                      <%= render 'shared/micropost'%>
-
     <hr style="width:100%; display: block; margin-left: auto;
                                                      margin-right: auto;">
     <hr style="width:100%; display: block; margin-left: auto;
                                                      margin-right: auto;">
     <h1>Advisors</h1>
 
-    <%= render 'shared/advisor'%>
-
-
-
-
-   ##The data will start to read by the computer
-  </div>
 <% else %>
 
 <div class="center jumbotron">

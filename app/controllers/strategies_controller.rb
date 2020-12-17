@@ -7,7 +7,7 @@ class StrategiesController < ApplicationController
         @strategy = current_user.strategies.build(strategy_params)
         @strategy.image.attach(params[:strategy][:image])
         if @strategy.save
-            flash[:success] = "Micropost is created"
+            flash[:success] = "Strategy is created"
             redirect_to root_url
         else
             @feed_items = current_user.strategy_feed.paginate(page: params[:page])

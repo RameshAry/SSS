@@ -1,7 +1,7 @@
-<% if @feed_items.any? %>
+<% if @strategy_items.any? %>
   <ol class="strategies">
-    <%= render @feed_items %>
+    <%= render @strategy_items %>
   </ol>
-  <%= will_paginate @feed_items,
+  <%= will_paginate @strategy_items,
                     params: { controller: :static_pages, action: :home } %>
 <% end %>

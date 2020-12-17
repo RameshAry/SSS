@@ -51,21 +51,25 @@ class User < ApplicationRecord
   end
 
   def advisor_feed
-      Micropost.where("user_id = ?", id)
+      Advisor.where("user_id = ?", id)
   end
 
-  def keyitems_feed
-      Micropost.where("user_id = ?", id)
+  def keyitem_feed
+      KeyItem.where("user_id = ?", id)
+  end
+
+  def market_feed
+    Market.where("user_id = ?", id)
   end
 
 
 
-  def progresses_feed
-      Micropost.where("user_id = ?", id)
+  def progress_feed
+      Progress.where("user_id = ?", id)
   end
 
-  def strategies_feed
-      Micropost.where("user_id = ?", id)
+  def strategy_feed
+      Strategy.where("user_id = ?", id)
   end
 
 
